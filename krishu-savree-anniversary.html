@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Krishu & Savree – 6 Month Anniversary 💖</title>
+  <style>
+    body { margin: 0; font-family: 'Comic Sans MS', cursive, sans-serif; background: #fff0f5; color: #333; text-align: center; }
+    header { background: #ff69b4; padding: 20px; color: white; font-size: 2em; }
+    #musicToggle {
+      margin: 10px auto;
+      background: #ff69b4;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+section { margin: 30px auto; max-width: 800px; padding: 20px; background: #fff; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    h2 { color: #ff69b4; }
+    #countdown { font-size: 1.5em; color: #d6336c; margin-top: 10px; }
+    .gallery img { width: 100px; margin: 10px; border-radius: 10px; cursor: pointer; }
+    .memory-game { display: grid; grid-template-columns: repeat(4, 80px); grid-gap: 10px; justify-content: center; margin-top: 20px; }
+    .card { width: 80px; height: 80px; background: #ffe4e1; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 2em; cursor: pointer; user-select: none; }
+    .card.matched { background: #90ee90; }
+    .lightbox { display: none; position: fixed; z-index: 999; padding-top: 60px; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.9); }
+    .lightbox-content { margin: auto; display: block; max-width: 90%; max-height: 80%; }
+    .lightbox:target { display: block; }
+    .close { position: absolute; top: 30px; right: 45px; color: #fff; font-size: 40px; font-weight: bold; text-decoration: none; transition: 0.3s; }
+    .close:hover { color: #ff69b4; }
+      </style>
+</head>
+<body>
+<audio id="bgMusic" loop><source src="background.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
+<header>🎉 Happy 6 Months meri jaan 🎉</header>
+<!-- Music Toggle Button -->
+<button id="musicToggle" title="Toggle Music">🎵</button>
+
+<section><h2>Countdown to Anniversary!</h2><div id="countdown"></div></section>
+
+<section id="gallery">
+<h2>💌 "In the little echoes of our chats, love found its rhythm." 💌</h2>
+<h3>📝 Fragments of Us, Etched in Chats</h3>
+<div class="gallery"><a href="#chat1"><img src="chat1.png" alt="Chat 1"></a><a href="#chat2"><img src="chat2.png" alt="Chat 2"></a><a href="#chat3"><img src="chat3.png" alt="Chat 3"></a><a href="#chat4"><img src="chat4.png" alt="Chat 4"></a><a href="#chat5"><img src="chat5.png" alt="Chat 5"></a><a href="#chat6"><img src="chat6.png" alt="Chat 6"></a><a href="#chat7"><img src="chat7.png" alt="Chat 7"></a><a href="#chat8"><img src="chat8.png" alt="Chat 8"></a><a href="#chat9"><img src="chat9.png" alt="Chat 9"></a><a href="#chat10"><img src="chat10.png" alt="Chat 10"></a><a href="#chat11"><img src="chat11.png" alt="Chat 11"></a><a href="#chat12"><img src="chat12.png" alt="Chat 12"></a><a href="#chat13"><img src="chat13.png" alt="Chat 13"></a><a href="#chat14"><img src="chat14.png" alt="Chat 14"></a><a href="#chat15"><img src="chat15.png" alt="Chat 15"></a><a href="#chat16"><img src="chat16.png" alt="Chat 16"></a><a href="#chat17"><img src="chat17.png" alt="Chat 17"></a><a href="#chat18"><img src="chat18.png" alt="Chat 18"></a></div>
+
+    <div id="chat1" class="lightbox">
+      <a href="#" class="close">&times;</a>
+      <img class="lightbox-content" src="chat1.png" alt="Chat 1">
+    </div>
+
+    <div id="chat2" class="lightbox">
+      <a href="#" class="close">&times;</a>
+      <img class="lightbox-content" src="chat2.png" alt="Chat 2">
+    </div>
+
+    <div id="chat3" class="lightbox">
+      <a href="#" class="close">&times;</a>
+      <img class="lightbox-content" src="chat3.png" alt="Chat 3">
+    </div>
+
+    <div id="chat4" class="lightbox">
+      <a href="#" class="close">&times;</a>
+      <img class="lightbox-content" src="chat4.png" alt="Chat 4">
+    </div>
+
+    <div id="chat5" class="lightbox">
+      <a href="#" class="close">&times;</a>
+      <img class="lightbox-content" src="chat5.png" alt="Chat 5">
+    </div>
+
+    <div id="chat6" class="lightbox">
+      <a href="#" class="close">&times;</a>
+      <img class="lightbox-content" src="chat6.png" alt="Chat 6">
+    </div>
+
+    <div id="chat7" class="lightbox">
+      <a href="#" class="close">&times;</a>
+      <img class="lightbox-content" src="chat7.png" alt="Chat 7">
+    </div>
+
+    <div id="chat8" class="lightbox">
+      <a href="#" class="close">&times;</a>
+      <img class="lightbox-content" src="chat8.png" alt="Chat 8">
+    </div>
+
+    <div id="chat9" class="lightbox">
+      <a href="#" class="close">&times;</a>
+      <img class="lightbox-content" src="chat9.png" alt="Chat 9">
+    </div>
+
+    <div id="chat10" class="lightbox">
+      <a href="#" class="close">&times;</a>
+      <img class="lightbox-content" src="chat10.png" alt="Chat 10">
+    </div>
+
+    <div id="chat11" class="lightbox">
+      <a href="#" class="close">&times;</a>
+      <img class="lightbox-content" src="chat11.png" alt="Chat 11">
+    </div>
+
+    <div id="chat12" class="lightbox">
+      <a href="#" class="close">&times;</a>
+      <img class="lightbox-content" src="chat12.png" alt="Chat 12">
+    </div>
+
+    <div id="chat13" class="lightbox">
+      <a href="#" class="close">&times;</a>
+      <img class="lightbox-content" src="chat13.png" alt="Chat 13">
+    </div>
+
+    <div id="chat14" class="lightbox">
+      <a href="#" class="close">&times;</a>
+      <img class="lightbox-content" src="chat14.png" alt="Chat 14">
+    </div>
+
+    <div id="chat15" class="lightbox">
+      <a href="#" class="close">&times;</a>
+      <img class="lightbox-content" src="chat15.png" alt="Chat 15">
+    </div>
+
+    <div id="chat16" class="lightbox">
+      <a href="#" class="close">&times;</a>
+      <img class="lightbox-content" src="chat16.png" alt="Chat 16">
+    </div>
+
+    <div id="chat17" class="lightbox">
+      <a href="#" class="close">&times;</a>
+      <img class="lightbox-content" src="chat17.png" alt="Chat 17">
+    </div>
+
+    <div id="chat18" class="lightbox">
+      <a href="#" class="close">&times;</a>
+      <img class="lightbox-content" src="chat18.png" alt="Chat 18">
+    </div>
+  <section>
+  <h3>🧸 Us</h3>
+  <div class="gallery">
+    <!-- Gallery images -->
+    <a href="#us1"><img src="us1.png" alt="Us 1"></a>
+    <a href="#us2"><img src="us2.png" alt="Us 2"></a>
+    <a href="#us3"><img src="us3.png" alt="Us 3"></a>
+    <a href="#us4"><img src="us4.png" alt="Us 4"></a>
+    <a href="#us5"><img src="us5.png" alt="Us 5"></a>
+    <a href="#us6"><img src="us6.png" alt="Us 6"></a>
+    <a href="#us7"><img src="us7.png" alt="Us 7"></a>
+    <a href="#us8"><img src="us8.png" alt="Us 8"></a>
+    <a href="#us9"><img src="us9.png" alt="Us 9"></a>
+    <a href="#us10"><img src="us10.png" alt="Us 10"></a>
+    <a href="#us11"><img src="us11.png" alt="Us 11"></a>
+    <a href="#us12"><img src="us12.png" alt="Us 12"></a>
+    <a href="#us13"><img src="us13.png" alt="Us 13"></a>
+    <a href="#us14"><img src="us14.png" alt="Us 14"></a>
+    <a href="#us15"><img src="us15.png" alt="Us 15"></a>
+    <a href="#us16"><img src="us16.png" alt="Us 16"></a>
+  </div>
+
+  <!-- Lightbox for images -->
+  <div id="us1" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img class="lightbox-content" src="us1.png" alt="Us 1">
+  </div>
+
+  <div id="us2" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img class="lightbox-content" src="us2.png" alt="Us 2">
+  </div>
+
+  <div id="us3" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img class="lightbox-content" src="us3.png" alt="Us 3">
+  </div>
+
+  <div id="us4" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img class="lightbox-content" src="us4.png" alt="Us 4">
+  </div>
+
+  <div id="us5" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img class="lightbox-content" src="us5.png" alt="Us 5">
+  </div>
+
+  <div id="us6" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img class="lightbox-content" src="us6.png" alt="Us 6">
+  </div>
+
+  <div id="us7" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img class="lightbox-content" src="us7.png" alt="Us 7">
+  </div>
+
+  <div id="us8" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img class="lightbox-content" src="us8.png" alt="Us 8">
+  </div>
+
+  <div id="us9" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img class="lightbox-content" src="us9.png" alt="Us 9">
+  </div>
+
+  <div id="us10" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img class="lightbox-content" src="us10.png" alt="Us 10">
+  </div>
+
+  <div id="us11" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img class="lightbox-content" src="us11.png" alt="Us 11">
+  </div>
+
+  <div id="us12" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img class="lightbox-content" src="us12.png" alt="Us 12">
+  </div>
+
+  <div id="us13" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img class="lightbox-content" src="us13.png" alt="Us 13">
+  </div>
+
+  <div id="us14" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img class="lightbox-content" src="us14.png" alt="Us 14">
+  </div>
+
+  <div id="us15" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img class="lightbox-content" src="us15.png" alt="Us 15">
+  </div>
+
+  <div id="us16" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img class="lightbox-content" src="us16.png" alt="Us 16">
+  </div>
+</section>
+
+<style>
+  /* Gallery Styles */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-items: center; /* Centers the images in their grid cells */
+    max-width: 100%; /* Prevents gallery from overflowing */
+  }
+
+  /* Ensure all images are displayed fully without cropping or distortion */
+  .gallery img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    object-fit: contain; /* Ensures images keep their aspect ratio */
+    margin: 0 auto; /* Centers the images in their container */
+  }
+
+  /* Lightbox Styles */
+  .lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lightbox-content {
+    max-width: 90%;
+    max-height: 80%;
+    object-fit: contain; /* Ensures images retain their aspect ratio without distortion */
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+  }
+
+  /* Display lightbox on active */
+  .lightbox:target {
+    display: flex;
+  }
+</style>
+
+<section>
+<h2>Memory Matching Game 💘</h2>
+<div class="memory-game" id="game"></div>
+</section>
+
+<footer style="margin: 40px 0; color: #888;">Made with love 💖 by your Kishmish</footer>
+
+<script>
+const countdown = document.getElementById("countdown");
+const anniversary = new Date("April 11, 2025 00:00:00").getTime();
+function updateCountdown() {
+  const now = new Date().getTime();
+  const distance = anniversary - now;
+  if (distance < 0) { countdown.innerText = "🎉 Happy 6 Months! 🎉"; return; }
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hrs = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const secs = Math.floor((distance % (1000 * 60)) / 1000);
+  countdown.innerText = `${days}d ${hrs}h ${mins}m ${secs}s`;
+}
+setInterval(updateCountdown, 1000);
+updateCountdown();
+
+const symbols = ['💖','🍓','🌈','🧸','💌','✨','🎀','🐻'];
+const game = document.getElementById("game");
+let cards = [...symbols, ...symbols];
+let flipped = [];
+let matched = [];
+function shuffle(arr) { return arr.sort(() => 0.5 - Math.random()); }
+function resetGame() {
+  game.innerHTML = '';
+  flipped = [];
+  matched = [];
+  shuffle(cards).forEach(symbol => {
+    const card = document.createElement("div");
+    card.className = "card";
+    card.dataset.symbol = symbol;
+    card.innerText = '';
+    card.onclick = () => flipCard(card);
+    game.appendChild(card);
+  });
+}
+function flipCard(card) {
+  if (card.classList.contains("matched") || flipped.length === 2 || flipped.includes(card)) return;
+  card.innerText = card.dataset.symbol;
+  flipped.push(card);
+  if (flipped.length === 2) {
+    if (flipped[0].dataset.symbol === flipped[1].dataset.symbol) {
+      flipped.forEach(c => c.classList.add("matched"));
+      matched.push(...flipped);
+      if (matched.length === cards.length) {
+        setTimeout(() => alert("Yay! You matched all the hearts! 💘"), 300);
+      }
+    } else {
+      setTimeout(() => flipped.forEach(c => c.innerText = ''), 800);
+    }
+    flipped = [];
+  }
+}
+resetGame();
+
+const bgMusic = document.getElementById("bgMusic");
+  const toggleBtn = document.getElementById("musicToggle");
+  let isPlaying = false;
+
+  toggleBtn.addEventListener("click", () => {
+    if (isPlaying) {
+      bgMusic.pause();
+      toggleBtn.innerText = "🔇";
+    } else {
+      bgMusic.play();
+      toggleBtn.innerText = "🎵";
+    }
+    isPlaying = !isPlaying;
+  });
+</script>
+
+</body>
+</html>
+
